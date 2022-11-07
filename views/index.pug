@@ -5,7 +5,7 @@ block content
   ul 
     each message in messages
       li
-        p= message.text
-        p From #{message.user}
+        p= '"' + message.text + '"'
+        p From: #{message.user}
         p Date: #{message.added}
   a(href='/new') Add new message
