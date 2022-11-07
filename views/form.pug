@@ -2,8 +2,11 @@ extends layout
 
 block content
     form(action="/new" method="POST") 
-        label= Author 
-        input(type='text' name="author" required)
+        h1 Add New Message
+        div
+            label Author 
+            input(type='text' name="author" required)
 
-        label= Message 
-        textarea(name="message", cols="30", rows="10" required)
+        div
+            label Message 
+            textarea(name="message", cols="30", rows="10" required)
