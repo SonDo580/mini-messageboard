@@ -21,7 +21,8 @@ router.get("/", function (req, res, next) {
 
 router.post("/new", function (req, res, next) {
   const { author, message } = req.body;
-  const added = new Date();
+
+  messages.push({ text: message, user: author, added: new Date() });
 });
 
 module.exports = router;
