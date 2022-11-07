@@ -5,6 +5,8 @@ router.get("/", function (req, res, next) {
   res.render("form", { title: "Message Form" });
 });
 
-router.post("/", function (req, res, next) {});
+router.post("/", function (req, res, next) {
+  const { author, message } = req.body;
+});
 
 module.exports = router;
