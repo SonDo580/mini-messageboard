@@ -19,4 +19,8 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "Mini MessageBoard", messages: messages });
 });
 
+router.post("/new", function (req, res, next) {
+  const { author, message } = req.body;
+});
+
 module.exports = router;
